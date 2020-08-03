@@ -15,11 +15,17 @@ function setup() {
   ball= new Ball(100,150);
   wall3= new Wall(width,displayHeight/2,100,1000);
   wall4= new Wall(0,displayHeight/2,100,1000);
+
 }
 
 function draw() {
   background(0);
   Engine.update(engine);
+
+  fill(255);
+  textSize(30);
+  textFont("Times New Roman")
+  text("Press Spacebar",150,425);
 
   wall.display();
   wall2.display();
